@@ -1,0 +1,39 @@
+<%- include('partials/header') %>
+
+<div class="row container-login">
+  <div class="col-lg-4 col-md-6 col-sm-6 login-box">
+    <div class="card shadow">
+      <div class="card-title text-center border-bottom">
+        <h2> Welcome back!  🙊</h2>
+      </div>
+      <div class="card-body">
+        <form action="/login" method="POST">
+          <div class="mb-4 text-center">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" name="username">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" name="password"  autocomplete="on">
+            </div>
+            <br>
+            <button type="submit" class="btn btn-dark col-12">Login</button>
+            <a class="btn col-12 btn-social btn-google" href="/auth/google" role="button">
+              <i class="fab fa-google"></i>
+              Sign In with Google
+            </a>
+            <a class="btn col-12 btn-social btn-facebook" href="/auth/facebook" role="button">
+              <i class="fab fa-facebook"></i>
+              Sign In with Facebook
+            </a>
+            <p>Don't have an account? <a href="/register">Sign Up</a></p>
+          </form>
+          </div>
+        </form>
+      </div>
+    </div>
+</div>
+
+
+<%- include('partials/footer') %>
