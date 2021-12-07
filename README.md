@@ -1,6 +1,6 @@
 # Secrets-App
 
-Aplicación centrada en la authentificacion de usuaros, La idea es registrarse y postear tus secretos, los cuales son mostrados en la pantalla principal sin dar a conocer quien los publico, basada en una aplicación movil que realiza una funcion similar. 
+Aplicación centrada en la authentificacion de usuaros. La idea es registrarse y postear tus secretos, los cuales son mostrados en la pantalla principal sin dar a conocer quien los publico, basada en una aplicación movil que realiza una funcion similar. 
 
 Estilo simple realizado con bootstrap, se uso node js y passport/OATH para el uso de google y Facebook (La aplicaciones de facebook por cuestiones de la plataforma no permite el registro actualmente, solo con las cuentas que registre en un inicio cuando cree la aplicación.)
 Para el registro por correo usando el formulario de hace uso de passport. El almacenamiento de los datos de los usuarios asi como el arreglo de los secretos ingresados por cada usuariose lleva a cabo con MongoDB (mongoose). 
